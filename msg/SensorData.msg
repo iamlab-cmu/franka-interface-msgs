@@ -1,6 +1,6 @@
 # Sensor data
 std_msgs/Header header
 string info
+uint8 type
 int32 size
-int32 type
 uint8[] sensorData

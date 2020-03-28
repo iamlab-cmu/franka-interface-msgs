@@ -9,29 +9,29 @@ uint64[] sensor_value_sizes
 float64[] initial_sensor_values
 
 # traj gen
-uint8 traj_gen_type
-int32 traj_gen_param_data_size
-uint8[] traj_gen_param_data
+uint8 trajectory_generator_type
+int32 trajectory_generator_param_data_size
+uint8[] trajectory_generator_param_data
 
 # fbc
 uint8 feedback_controller_type
-uint64 num_feedback_controller_params
-float64[] feedback_controller_params
+int32 feedback_controller_param_data_size
+uint8[] feedback_controller_param_data
 
 # termination
-uint8 termination_type
-uint64 num_termination_params
-float64[] termination_params 
+uint8 termination_handler_type
+int32 termination_handler_param_data_size
+uint8[] termination_handler_param_data 
 
 # timer
 uint8 timer_type
-uint64 num_timer_params
-float64[] timer_params
+int32 num_timer_params
+uint8[] timer_params
 ---
 # Result - happens when the skill terminates
 uint64 num_execution_result
-float64[] execution_result
+uint8[] execution_result
 ---
 # Feedback message - happens during skill execution 
 uint64 num_execution_feedback
-float64[] execution_feedback
+uint8[] execution_feedback

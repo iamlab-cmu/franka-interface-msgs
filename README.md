@@ -1,1 +1,1 @@
-# franka_msgs
+# franka_interface_msgs

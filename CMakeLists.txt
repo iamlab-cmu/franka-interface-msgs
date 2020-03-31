@@ -51,7 +51,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   Errors.msg
-  RobolibStatus.msg
+  FrankaInterfaceStatus.msg
   RobotState.msg
   RunLoopProcessInfoState.msg
   SensorData.msg
@@ -61,7 +61,7 @@ add_message_files(
 add_service_files(
   FILES
   GetCurrentRobotStateCmd.srv
-  GetCurrentRobolibStatusCmd.srv
+  GetCurrentFrankaInterfaceStatusCmd.srv
 )
 
 ## Generate actions in the 'action' folder
